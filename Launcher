@@ -1,0 +1,115 @@
+from re import A
+import mysql.connector
+from tkinter import messagebox
+import fade
+from pystyle import Write, Colors, Colorate, Center
+import colorama
+import time,sys,os
+from termcolor import colored
+from time import sleep
+from os import system, name
+from colorama import init, Fore, Back, Style
+
+ART = """
+                                              MMMMMMMMMMMMMO'    .xWMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+                                              MMMMMMMMMMMMK:      ,0MMMMMMMMMMMMMMMMMMMMMMMMMMMM
+                                              MMMMMMMMMMMXc        ;KMMMMMMMMMMMMMMMMMMMMMMMMMMM
+                                              MMMMMMMMMMNl          :XMMMMMMMMMMMMMMMMMMMMMMMMMM
+                                              MMMMMMMMMWd.   .;;     lNMMMMMMMMMMMMMMMMMMMMMMMMM
+                                              MMMMMMMMWx.    cXXc    .oXNMMMMMMMMMMMMMMMMMMMMMMM
+                                              MMMMMMMWk.    :KMMK;    .,xWMMMMMMMMMMMMMMMMMMMMMM
+                                              MMMMMMM0'    ,0MMMM0,     .kWMMMMMMMMMMMMMMMMMMMMM
+                                              MMMMMMK;    .OMMMMMWk.     'OMMMMMMMMMMMMMMMMMMMMM
+                                              MMMMMX:    .xWMMMMMMWx.     ,0MMMMMMMMMMMMMMMMMMMM
+                                              MMMMXc    .oNMMMMMMMMNo.     :KMMMMMMMMMMMMMMMMMMM
+                                              MMMNo.    lNMMMMMMMMMMNl      cXMMMMMMMMMMMMMMMMMM
+                                              MMWd.    :XMMMMMMMMMMMMX:.     lNMMMMMMMMMMMMMMMMM
+                                              MWk.    ;KMMMMMMMMMMMMMM0d,    .dWMMMMMMMMMMMMMMMM
+                                              MO'    'OMMMMMMMMMMMMMMMMWO'    .dKKKKKKXXKKXXKKKX
+                                              0,    .kWMMMMMMMMMMMMMMMMMWk.     ................
+                                              ;    .dWMMMMMMMMMMMMMMMMMMMWd.                    
+                                                  :XMMMMMMMMMMMMMMMMMMMMMX:                    
+"""
+        
+
+
+        
+
+
+print(fade.fire(ART))
+cnx = mysql.connector.connect(user = 'root', password = 'DATABASE PASSWORD', host='DATABASE IP', database='DATABASE NAME')
+cursor = cnx.cursor()
+        
+cursor = cnx.cursor()
+cursor.execute("SELECT askupdate, message FROM updater")
+data = cursor.fetchone()              
+mesaj="You were hacked by Alice! \n (M1000)\n TURN OFF YOUR COMPUTER NOW!"
+
+wannahack= Write.Print("YOU WANNA HACK?\n", Colors.red_to_purple, interval=0.0025)
+tarfet= Write.Input("TARGET COMPUTER IP:", Colors.red_to_purple, interval=0.0100)
+wannahack= Write.Print("LAUNCHİNG\n", Colors.red_to_purple, interval=0.0025)
+animation = "|/-\\|/-\\ "
+for i in range(20):
+    time.sleep(0.1)
+    sys.stdout.write("\r" + animation[i % len(animation)])
+    sys.stdout.flush()
+os.system('cls' if os.name in ('nt', 'dos') else 'clear')
+BRUTE= """
+██████╗░██████╗░██╗░░░██╗████████╗███████╗  ███████╗░█████╗░██████╗░░█████╗░███████╗
+██╔══██╗██╔══██╗██║░░░██║╚══██╔══╝██╔════╝  ██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔════╝
+██████╦╝██████╔╝██║░░░██║░░░██║░░░█████╗░░  █████╗░░██║░░██║██████╔╝██║░░╚═╝█████╗░░
+██╔══██╗██╔══██╗██║░░░██║░░░██║░░░██╔══╝░░  ██╔══╝░░██║░░██║██╔══██╗██║░░██╗██╔══╝░░
+██████╦╝██║░░██║╚██████╔╝░░░██║░░░███████╗  ██║░░░░░╚█████╔╝██║░░██║╚█████╔╝███████╗
+╚═════╝░╚═╝░░╚═╝░╚═════╝░░░░╚═╝░░░╚══════╝  ╚═╝░░░░░░╚════╝░╚═╝░░╚═╝░╚════╝░╚══════╝
+"""
+print(fade.purplepink(BRUTE))
+print(f"""{Fore.WHITE}[{Fore.YELLOW}HACKİNG{Fore.WHITE}] | IP {Fore.WHITE}[{Fore.GREEN}{tarfet}{Fore.WHITE}] | SUCCESS {Fore.WHITE}[{Fore.RED}NO{Fore.WHITE}]""")
+time.sleep(0.5)
+print(f"""{Fore.WHITE}[{Fore.YELLOW}HACKİNG{Fore.WHITE}] | IP {Fore.WHITE}[{Fore.GREEN}{tarfet}{Fore.WHITE}] | SUCCESS {Fore.WHITE}[{Fore.RED}NO{Fore.WHITE}]""")
+time.sleep(0.5)
+print(f"""{Fore.WHITE}[{Fore.YELLOW}HACKİNG{Fore.WHITE}] | IP {Fore.WHITE}[{Fore.GREEN}{tarfet}{Fore.WHITE}] | SUCCESS {Fore.WHITE}[{Fore.RED}NO{Fore.WHITE}]""")
+time.sleep(0.5)
+print(f"""{Fore.WHITE}[{Fore.YELLOW}HACKİNG{Fore.WHITE}] | IP {Fore.WHITE}[{Fore.GREEN}{tarfet}{Fore.WHITE}] | SUCCESS {Fore.WHITE}[{Fore.RED}NO{Fore.WHITE}]""")
+time.sleep(0.5)
+print(f"""{Fore.WHITE}[{Fore.YELLOW}HACKİNG{Fore.WHITE}] | IP {Fore.WHITE}[{Fore.GREEN}{tarfet}{Fore.WHITE}] | SUCCESS {Fore.WHITE}[{Fore.RED}NO{Fore.WHITE}]""")
+print(f"""{Fore.WHITE}[{Fore.YELLOW}HACKİNG{Fore.WHITE}] | IP {Fore.WHITE}[{Fore.GREEN}{tarfet}{Fore.WHITE}] | SUCCESS {Fore.WHITE}[{Fore.RED}NO{Fore.WHITE}]""")
+time.sleep(0.5)
+print(f"""{Fore.WHITE}[{Fore.YELLOW}HACKİNG{Fore.WHITE}] | IP {Fore.WHITE}[{Fore.GREEN}{tarfet}{Fore.WHITE}] | SUCCESS {Fore.WHITE}[{Fore.RED}NO{Fore.WHITE}]""")
+time.sleep(0.5)
+print(f"""{Fore.WHITE}[{Fore.YELLOW}HACKİNG{Fore.WHITE}] | IP {Fore.WHITE}[{Fore.GREEN}{tarfet}{Fore.WHITE}] | SUCCESS {Fore.WHITE}[{Fore.RED}NO{Fore.WHITE}]""")
+time.sleep(0.5)
+print(f"""{Fore.WHITE}[{Fore.YELLOW}HACKİNG{Fore.WHITE}] | IP {Fore.WHITE}[{Fore.GREEN}{tarfet}{Fore.WHITE}] | SUCCESS {Fore.WHITE}[{Fore.RED}NO{Fore.WHITE}]""")
+time.sleep(0.5)
+print(f"""{Fore.WHITE}[{Fore.YELLOW}HACKİNG{Fore.WHITE}] | IP {Fore.WHITE}[{Fore.GREEN}{tarfet}{Fore.WHITE}] | SUCCESS {Fore.WHITE}[{Fore.RED}NO{Fore.WHITE}]""")
+time.sleep(0.5)
+print(f"""{Fore.WHITE}[{Fore.YELLOW}HACKİNG{Fore.WHITE}] | IP {Fore.WHITE}[{Fore.GREEN}{tarfet}{Fore.WHITE}] | SUCCESS {Fore.WHITE}[{Fore.RED}NO{Fore.WHITE}]""")
+time.sleep(0.5)
+print(f"""{Fore.WHITE}[{Fore.YELLOW}HACKİNG{Fore.WHITE}] | IP {Fore.WHITE}[{Fore.GREEN}{tarfet}{Fore.WHITE}] | SUCCESS {Fore.WHITE}[{Fore.RED}NO{Fore.WHITE}]""")
+time.sleep(0.5)
+print(f"""{Fore.WHITE}[{Fore.YELLOW}HACKİNG{Fore.WHITE}] | IP {Fore.WHITE}[{Fore.GREEN}{tarfet}{Fore.WHITE}] | SUCCESS {Fore.WHITE}[{Fore.RED}NO{Fore.WHITE}]""")
+time.sleep(0.5)
+print(f"""{Fore.WHITE}[{Fore.YELLOW}HACKİNG{Fore.WHITE}] | IP {Fore.WHITE}[{Fore.GREEN}{tarfet}{Fore.WHITE}] | SUCCESS {Fore.WHITE}[{Fore.RED}NO{Fore.WHITE}]""")
+time.sleep(0.5)
+print(f"""{Fore.WHITE}[{Fore.YELLOW}HACKİNG{Fore.WHITE}] | IP {Fore.WHITE}[{Fore.GREEN}{tarfet}{Fore.WHITE}] | SUCCESS {Fore.WHITE}[{Fore.RED}NO{Fore.WHITE}]""")
+time.sleep(0.5)
+for i in range(20):
+    time.sleep(0.1)
+    sys.stdout.write("\r" + animation[i % len(animation)])
+    sys.stdout.flush()
+print(f"""\n{Fore.GREEN}[{Fore.GREEN}HACKİNG{Fore.GREEN}] | IP {Fore.GREEN}[{Fore.GREEN}{tarfet}{Fore.GREEN}] | SUCCESS {Fore.GREEN}[{Fore.GREEN}YES{Fore.GREEN}]""")
+wannahack= Write.Print("ATTACK SUCCESSFUL! USER'S COMPUTER IS TURNING OFF...\n", Colors.red_to_purple, interval=0.0025)
+
+sql = "UPDATE updater SET askupdate ='yesx'"
+cursor.execute(sql)
+cnx.commit() 
+exit()
+
+
+
+
+
+
+
+
+
+
